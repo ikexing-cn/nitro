@@ -42,7 +42,7 @@ export async function setupTest (preset) {
       '/rules/swr/**': { swr: true },
       '/rules/swr-ttl/**': { swr: 60 },
       '/rules/redirect/obj': {
-        redirect: { to: 'https://nitro.unjs1.io/', statusCode: 308 }
+        redirect: { to: 'https://nitro.unjs.io/', statusCode: 308 }
       },
       '/rules/nested/**': { redirect: '/base', headers: { 'x-test': 'test' } },
       '/rules/nested/override': { redirect: { to: '/other' } }
